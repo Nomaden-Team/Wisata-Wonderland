@@ -21,7 +21,7 @@ $admin_nama = $_SESSION['nama'] ?? 'Admin';
             <span class="wl-theme-toggle-icon" aria-hidden="true">☾</span>
             <span class="wl-theme-toggle-label">Dark</span>
         </button>
-        <a href="index.php" class="adm-view-website" target="_blank">View Website</a>
+        <a href="index.php" class="adm-view-website">View Website</a>
         <button type="button"
            class="adm-logout-btn"
            id="admLogoutBtn"

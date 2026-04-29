@@ -1,19 +1,15 @@
+
 <?php
-// config/koneksi.php
+$host = "sql304.infinityfree.com";
+$user = "if0_41787408";
+$pass = "yP10rIBMqMK3V";
+$db   = "if0_41787408_wonderland";
 
-$host = "localhost";      // Nama host (biasanya localhost)
-$user = "root";           // Username database default XAMPP
-$pass = "1";               // Password default XAMPP (kosong)
-$db   = "wonderland";  // Nama database yang kamu buat di phpMyAdmin
-
-// Membuat koneksi ke database
 $koneksi = mysqli_connect($host, $user, $pass, $db);
 
-// Cek apakah koneksi berhasil atau gagal
 if (!$koneksi) {
     die("Koneksi ke database gagal: " . mysqli_connect_error());
 }
 
-// Opsional: Untuk memastikan karakter unik/simbol tampil dengan benar
 mysqli_set_charset($koneksi, "utf8mb4");
 ?>
